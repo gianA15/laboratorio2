@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <title>E4</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+         <a class="navbar-brand" href="#">Laboratorio - Semana 2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ejercicio1.html">Ejercicio 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ejercicio2.html">Ejercicio 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ejercicio3.html">Ejercicio 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ejercicio4.html">Ejercicio 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ejercicio5.html">Ejercicio 5</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+   <form action="">
+
+    <h1> Ejercicio 4 </h1>
+        
+
+        <label>Ingrese los valores</label><br><br>
+        <input type="text" id="n1" placeholder="nro 1"><br><br>
+        <input type="text" id="n2" placeholder="nro 2"><br><br>
+        <input type="text" id="n3" placeholder="nro 3"><br><br> 
+        <br>
+
+    <button type="button" onclick="resultados()">Resultados</button>
+  </form>
+
+
+<script>
+
+  function resultados(){
+
+    var n1 = parseInt(document.getElementById("n1").value);
+    var n2 = parseInt(document.getElementById("n2").value);
+    var n3 = parseInt(document.getElementById("n3").value);
+      
+    var suma;
+    suma = n1 + n2 + n3;
+      
+    var promedio;
+    promedio = suma / 3;
+        
+    if (promedio >= 4) {
+        document.write('Regular');
+    } else {
+        document.write('Reprobado');
+    }
+
+}
+</script>
+
+
+
+</body>
+
+</html>
